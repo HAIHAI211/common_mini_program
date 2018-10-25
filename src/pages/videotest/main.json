@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "极客",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "txv-video": "plugin://tencentvideo/video"
+  }
+}
