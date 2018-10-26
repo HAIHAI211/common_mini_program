@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/vanttest/main",
+    "pages/filetest/main",
     "pages/videotest/main",
     "pages/index/main",
     "pages/logs/main",
