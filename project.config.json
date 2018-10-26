@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "dist/",
 	"compileType": "miniprogram",
-	"appid": "wx4badd3f7b610bc77 ",
+	"appid": "wx4badd3f7b610bc77",
 	"projectname": "common-mini-program",
 	"condition": {
 		"search": {

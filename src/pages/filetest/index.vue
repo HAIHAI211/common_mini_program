@@ -1,6 +1,6 @@
 <template>
   <div class="filetest">
-    <div class="btn" @click="c">下载后预览</div>
+    <div class="btn" @touchstart.!capture="handleTap1">下载后预览</div>
     <div class="btn" @click="c1">在线预览</div>
   </div>
 </template>
@@ -8,7 +8,8 @@
 <script>
 export default {
   methods: {
-    c () {
+    handleTap1 () {
+      console.log('c')
       wx.downloadFile({
         url: 'http://www.gov.cn/zhengce/pdfFile/2018_PDF.pdf',
         success (res) {
