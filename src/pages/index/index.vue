@@ -1,13 +1,13 @@
 <template>
   <div class="container" @click="clickHandle('test click', $event)">
-
+    <button @click="openSetting">打开设置页</button>
+    <button open-type="getUserInfo" @getuserinfo="getuserinfo">登录</button>
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <div class="userinfo-nickname">
         <card :text="userInfo.nickName"></card>
       </div>
     </div>
-
     <div class="usermotto">
       <div class="user-motto">
         <card :text="motto"></card>
@@ -54,14 +54,27 @@ export default {
         }
       })
     },
+    getuserinfo (e) {
+      console.log(e.mp.detail)
+    },
+    openSetting () {
+      wx.openSetting({
+        success (res) {
+          console.log(res.authSetting)
+          // res.authSetting = {
+          //   "scope.userInfo": true,
+          //   "scope.userLocation": true
+          // }
+        }
+      })
+    },
     clickHandle (msg, ev) {
       console.log('clickHandle:', msg, ev)
     }
   },
 
   created () {
-    // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
+
   }
 }
 </script>

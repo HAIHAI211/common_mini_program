@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/index/main",
     "pages/animationtest/main",
     "pages/vanttest/main",
     "pages/filetest/main",
     "pages/videotest/main",
-    "pages/index/main",
     "pages/logs/main",
     "pages/counter/main"
   ],
@@ -16,7 +16,7 @@
   },
   "plugins": {
     "tencentvideo": {
-      "version": "1.2.0",
+      "version": "1.2.2",
       "provider": "wxa75efa648b60994b"
     }
   }
