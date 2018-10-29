@@ -14,7 +14,7 @@ export default {
       num: 0,
       min: 0,
       max: 1000,
-      step: 5,
+      step: 15,
       useAnimation: true,
       plus: true,
       timeId: null
