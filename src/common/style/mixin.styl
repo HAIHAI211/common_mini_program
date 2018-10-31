@@ -32,3 +32,18 @@ extend-click()
     left: -10px
     right: -10px
     bottom: -10px
+
+// iphone6设计稿下rpx和px转换
+rpx2px($rpx)
+  unit(0.5 * $rpx,px)
+
+px2rpx($px)
+  unit(2 * $px, 'rpx')
+
+// 动画demo
+// animation: name duration timing-function delay iteration-count direction;
+@-webkit-keyframes lanimation
+{
+  from {transform: scale(1)}
+  to {transform: scale(1.2)}
+}
